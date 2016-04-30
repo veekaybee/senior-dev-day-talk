@@ -56,11 +56,12 @@
                 <section>
                     <h2 id="About-the-data-landscape-in-2006">The data landscape in 2006<a class="anchor-link" href="#About-the-data-landscape-in-2006"></a></h2><p>
                 <img src="images/2006stack.png" alt="image" style="width: 400px;"></p>
+                                    <center><img src="images/bigtable.png" alt="Drawing" style="width: 600px;"/></center>
                 </section>
 
                 <section>
                     <h2 id="About-the-data-landscape-today">The data landscape today<a class="anchor-link" href="#About-the-data-landscape-today"></a></h2><p>
-                    <center><img src="images/landscape.png" alt="Drawing" style="width: 600px;"/></center>
+                    <center><img src="images/landscape.png" alt="Drawing" style="width: 800px;"/></center>
                 </section>
 
 
@@ -84,36 +85,35 @@
                 </section>
 
                 <section>
-                    <h1 id="Data-rule-#1:-Law-of-entropy">Data rule #1: Law of entropy<a class="anchor-link" href="#Data-rule-#1:-Law-of-entropy"></a></h1><blockquote><p>Natural processes have a preferred progress towards chaos</p>
+                    <h3 id="Data-rule-#1:-Law-of-entropy">Data rule #1: Law of entropy<a class="anchor-link" href="#Data-rule-#1:-Law-of-entropy"></a></h3><blockquote><p>Natural processes have a preferred progress towards chaos</p>
                 </blockquote>
                 <p>Goal: "I want to know how many customers I have."</p>
-                <center><img src="images/sourceoftruth.png" alt="Drawing" style="width: 400px;"/></center><p>Current environment:</p>
-                <ul>
-                <li>Apache Web logs</li>
-            <li>POS credit card information</li>
-            </ul>
-            <p>"Let's standardize everything, cross-reference weblogs with credit card info, and throw it into Hadoop"</p>
+                <center><img src="images/sourceoftruth.png" alt="Drawing" style="width: 600px;"/></center>
+                </section>
+
+                <section>
+                    <h3 id="Data-rule-#1a:-Law-of-entropy">Data Rule #1a: Vicki's Rule of Data<a class="anchor-link" href="#Data-rule-#1:-Law-of-entropy"></a></h3><blockquote><p>The further away from source your data is, the more annoying it gets to query and manage</p>
+                </blockquote>
+                <center><img src="images/sta.png" alt="Drawing" style="width: 600px;"/></center>
                     
                 </section>
 
                 <section>
-               <h1 id="Result:">Result:<a class="anchor-link" href="#Result:"></a></h1><center><img src="images/complicated.png" alt="Drawing" style="width: 400px;"/></center><p><strong>Takeaway:</strong> Your project will get complicated enough without throwing tons of new tools in. 
-                Evaluate each tool carefully. Add one on at a time.</p>
+               <h3 id="Result:"><a href="https://medium.com/airbnb-engineering/data-infrastructure-at-airbnb-8adfb34f169c#.1hcu9maan">Result</a></h1><center><img src="images/airbnb.png" alt="Drawing" style="width: 600px;"/>
+               <img src="images/airbnb2.png" alt="Drawing" style="width: 600px;"/></center><p><strong>Takeaway:</strong> Your project will get complicated enough without throwing tons of new tools in. 
+                Evaluate each tool carefully.</p>
                 </section>
 
                 <section>
-                   <h2 id="Data-rule-#2:-Pareto-Rule">Data rule #2: Pareto Rule<a class="anchor-link" href="#Data-rule-#2:-Pareto-Rule"></a></h2><blockquote><p>People use 20% of their tools 80% of the time because people stick to what they know.</p>
+                   <h3 id="Data-rule-#2:-Pareto-Rule">Data Rule #2: Pareto Rule<a class="anchor-link" href="#Data-rule-#2:-Pareto-Rule"></a></h3>People use 20% of their tools 80% of the time because people stick to what they know.
                 </blockquote>
-                <center><img src="images/datasciencesurvey.png" alt="Drawing" style="width: 300px;"/></center><p>From the <a href="http://duu86o6n09pv.cloudfront.net/reports/2015-data-science-salary-survey.pdf">Data Science Salary Survey 2015</a></p> 
+                <center><img src="images/proglang.png" alt="Drawing" style="width: 900px;"/></center><p>From the <a href="http://duu86o6n09pv.cloudfront.net/reports/2015-data-science-salary-survey.pdf">Data Science Salary Survey 2015</a></p> 
+                and <a href="http://redmonk.com/dberkholz/2015/03/13/the-emergence-of-spark/f">The emergence of Spark. </a>
                 </section>
 
                 <section>
-                    <h2 id="Data-rule-#3:-Conway's-Law">Data rule #3: Conway's Law<a class="anchor-link" href="#Data-rule-#3:-Conway's-Law"></a></h2><center><img src="images/vision.png" alt="Drawing" style="width: 100px;"/></center><blockquote><p>Organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations</p></blockquote>
-                        <ul>
-                    <li>Dashboard-friendly tools</li>
-                    <li>Make data available</li>
-                    <li>Sometimes, it's Excel</li>
-                    </ul>
+                    <h2 id="Data-rule-#3:-Conway's-Law">Data Rule #3: Conway's Law<a class="anchor-link" href="#Data-rule-#3:-Conway's-Law"></a></h2><p>Organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations</p><img src="images/18f.png" alt="Drawing" style="width: 1000px;"/>
+
                 </section>
 				
                 <section>
@@ -122,15 +122,17 @@
                 </section>
 
                 <section>
-                    <h3 id="Do-you-have-enough-data-for-Big-Data-Systems?">Do you have enough data for Big Data Systems?<a class="anchor-link" href="#Do-you-have-enough-data-for-Big-Data-Systems?"></a></h3><blockquote><p>Consulting service: you bring your big data problems to me, I say your data set fits in RAM, you pay me <code>$10000</code> for saving you <code>$500000</code>.</p>
-                    </blockquote>
+                    <h3 id="Do-you-have-enough-data-for-Big-Data-Systems?">Q1: Do you have enough data for Big Data?<a class="anchor-link" href="#Do-you-have-enough-data-for-Big-Data-Systems?"></a></h3> 
+                    <center><img src="images/bigdataproblems.png" alt="Drawing" style="width: 400px;"/></center>
                     <p>If you don't have big data, here's what your stack looks like:</p>
-                    <center><img src="images/landscapenobig.png" alt="Drawing" style="width: 200px;"/></center>
+                    <center><img src="images/landscapenobig.png" alt="Drawing" style="width: 400px;"/></center>
                 </section>
 
                 <section>
-                    <h2 id="What-kind-of-data-do-you-have?">What kind of data do you have?<a class="anchor-link" href="#What-kind-of-data-do-you-have?"></a></h2><p><br></p>
-                    <center><img src="images/folder.png" alt="Drawing" style="width: 100px;"/></center><ul>
+                    <h2 id="What-kind-of-data-do-you-have?">Q2: What kind of data do you have?<a class="anchor-link" href="#What-kind-of-data-do-you-have?"></a></h2>
+                    <center><img src="images/cleandata.png" alt="Drawing" style="width: 500px;"/></center>
+                    <br>
+                    <ul>
                     <li>Slow/fast </li>
                     <li>Relational/non-relational</li>
                     <li>Is your data special? </li>
@@ -138,12 +140,18 @@
                 </section>
 
                 <section>
-                    <h2 id="Who-is-going-to-be-working-with-your-data?">Who is going to be working with your data?<a class="anchor-link" href="#Who-is-going-to-be-working-with-your-data?"></a></h2><p><br></p>
-                    <center><img src="images/people.png" alt="Drawing" style="width: 100px;"/></center><ul>
+                    <h4 id="Who-is-going-to-be-working-with-your-data?"> Q4: Who is going to be working with your data?<a class="anchor-link" href="#Who-is-going-to-be-working-with-your-data?"></a></h4>
+                    <center><img src="images/erlang.png" alt="Drawing" style="width: 500px;"/></center>
+                    <ul>
                     <li>Engineers</li>
                     <li>Analysts</li>
                     <li>Decision-makers</li>
                     </ul>
+                </section>
+
+                <section>
+                    <h4 id="Who-is-going-to-be-working-with-your-data?"> Common architectures today <a class="anchor-link" href="#Who-is-going-to-be-working-with-your-data?"></a></h4>
+                    <center><img src="images/arch.png" alt="Drawing" style="width: 800px;"/></center>
                 </section>
 
                 <section>
@@ -160,14 +168,14 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Kafka</td>
-                                <td>Tensor Flow</td>
-                                <td>Caravel</td>
+                                <td><a href="http://kafka.apache.org/">Kafka</a></td>
+                                <td><a href="https://www.tensorflow.org/">Tensor Flow</a></td>
+                                <td><a href="https://github.com/airbnb/caravel">Caravel</a></td>
                             </tr>
                             <tr>
-                                <td> Feather</td>
-                                <td> Bayesian Query Language </td>
-                                <td>Jupyter Dashboards</td>                             
+                                <td> <a href="https://github.com/wesm/feather">Feather</a></td>
+                                <td> <a href="http://probcomp.csail.mit.edu/bayesdb/">Bayesian Query Language </a></td>
+                                <td> <a href="https://github.com/jupyter-incubator/dashboards">Jupyter Dashboards </a></td>                             
                             </tr>
 
                         </tbody>
